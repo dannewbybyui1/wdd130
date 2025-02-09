@@ -1,133 +1,241 @@
 
-body {
+    body {
     max-width: 1600px;
     margin: 0 auto;
     padding: 4em;
     font-size: 18px;
     text-align: center;
-    }
-    img {
-    display: block;
-    margin: 0 auto;
-    max-width: 300px;
-    }
-    h1, h2, h3, h4, h5, h6 {
-    font-family: var(--heading-font);
-    color: var(--headline-color-on-white);
-    }
-    h2 {
-    text-align: center;
-    }
-    hr {
-    height: 3px;
-    margin: 35px 0;
-    background: var(--accent1-color);
+    line-height: 1.5em;
     }
     header {
-    padding: 1em;
-    text-align: center;
-    color: var(--headline-color-on-color);
-    background-color: var(--paragraph-background-color);
+        padding: 1em;
+        text-align: center;
+        color: var(--headline-color-on-color);
+        background-color: var(--paragraph-background-color);
+        line-height: 1.5em;
     }
-    header > h1, header > h2 {
-    color: var(--headline-color-on-color);
+    nav {
+        background-color: var(--nav-background-color);
+        line-height: 3em;
+        text-align: center;
+        font-size: 1.2em;
+        line-height: 1.5em;
+        }
+        nav a {
+        background-color: rgb(4, 48, 26);
+        color: #d9c2a3;
+        padding:1em;
+        min-width: 120px;
+        text-decoration: none;
+        padding: 10px;
+        line-height: 1.5em;
+        padding: 35px;
+        }
+        nav a:hover {
+        background-color: black;
+        color: #d9c2a3;
+        color: var(--nav-hover-link-color);
+        background-color: var(--nav-hover-background-color);
+        line-height: 1.5em;
+        }
+    .home-title {
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        font-size: 2em;
+        color: darkgreen;
+        line-height: 1.5em;
+        margin: top 10px;
     }
-    p {
-    font-family: var(--paragraph-font);
-    color: var(--paragraph-color-on-white);
-    padding: 1em;
+    .book, .join {
+        background-color: rgb(3, 37, 6);
+        color: #d9c2a3;
+        line-height: 1.5em;
+        padding: 15px 30px;
+        margin-top: 50px;
+        border: radius 5px;
+    }
+    .book:hover, .join:hover {
+        background-color: rgba(179, 191, 159, 0.659);
+        color:rgb(4, 87, 35);
+        line-height: 1.5em;
+    }
+    .rivers-card,.camping-card,.rapids-card {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 20px;
+        margin: 200px 0;
+        border: 10px solid darkolivegreen;
+    }
+    main section img {
+        box-sizing: border-box;
+    }
+    .msg {
+        background-color: rgba(62, 110, 80, 0.7);
+        line-height: 1.5em;
+        padding: 35px;
+    }
+    .msg h2 {
+        background-color: rgb(3, 37, 6);
+        color: #d9c2a3;
+        line-height: 1.5em;
+        padding: 35px;
+    }
+    .msg p {
+        background-color: rgb(3, 37, 6);
+        color: #d9c2a3;
+        line-height: 1.5em;
+        padding: 15px;
+    }
+    footer {
+        background-color: rgba(62, 110, 80, 0.7);
+        line-height: 1.5em;
+        padding: 25px 50px;
+        margin: top 200px;
+    }
+    footer a {
+        background-color: rgb(3, 37, 6);
+        color: #d9c2a3;
+        line-height: 1.5em;
+    }
+    footer a:hover {
+        background-color: rgba(179, 191, 159, 0.659);
+        color:rgb(4, 87, 35);
+        line-height: 1.5em;
+    }
+    footer p {
+        font-size: 1.2em;
+    }
+    footer p a:hover {
+        text-decoration: underline;
+    }
+    footer .social img  {
+        width: 50px;
+        height: 50px;
+        line-height: 1.5em;
+        padding: 15px;
     }
     .colors {
     width: 100%;
     min-width: 350px;
     margin: 30px auto;
     text-align: center;
+    line-height: 1.5em;
     }
     .colors th {
     background-color: #999;
+    line-height: 1.5em;
     }
     .colors td{
     width: 25%;
     height: 3em;
+    line-height: 1.5em;
     }
     .primary {
     background-color: var(--primary-color);
+    line-height: 1.5em;
     }
     .secondary {
     background-color: var(--secondary-color);
+    line-height: 1.5em;
     }
     .accent1 {
     background-color: var(--accent1-color);
+    line-height: 1.5em;
     }
     .accent2{
     background-color: var(--accent2-color);
+    line-height: 1.5em;
     }
-    p.colored {
+    .fonts {
+    width: 100%;
+    min-width: 350px;
+    margin: 30px auto;
+    text-align: center;
+    line-height: 1.5em;
+    }
+    .fonts th {
+    background-color: #999;
+    line-height: 1.5em;
+    }
+    .fonts td{
+    width: 25%;
+    height: 3em;
+    line-height: 1.5em;
+    }
+    .heading {
+    font-family: var(--heading-font);
+    line-height: 1.5em;
+    }
+    .paragraph {
+    font-family: var(--paragraph-font);
+    line-height: 1.5em;
+    }
+    .headline {
+    background-color: var(--paragraph-background-color);
+    color: var(--headline-color-on-color);
+    line-height: 1.5em;
+    }
+    .headline.white {
+    background-color: #fff;
+    color: var(--headline-color-on-white);
+    line-height: 1.5em;
+    }
+    .headline.colored {
+    background-color: var(--paragraph-background-color);
+    color: var(--headline-color-on-color);
+    line-height: 1.5em;
+    }
+    .paragraph.white {
+    background-color: #fff;
+    color: var(--paragraph-color-on-white);
+    line-height: 1.5em;
+    }
+    .paragraph.colored {
     background-color: var(--paragraph-background-color);
     color: var(--paragraph-color-on-color);
+    line-height: 1.5em;
     }
-    nav {
-    background-color: var(--nav-background-color);
-    line-height: 3em;
-    text-align: center;
-    font-size: 1.2em;
-    }
-    nav  {
-    
-    list-style-type: none;
-    display: flex;
-    }
-    nav a {
-        background-color: rgb(4, 48, 26);
-        color: #d9c2a3;
-    padding:1em;
-    min-width: 120px;
-    text-decoration: none;
+    .icon {
+    width: 80px;
+    height: 80px;
+    line-height: 1.5em;
     padding: 10px;
-    }
-    nav a:link, nav a:visited {
-    color: var(--nav-link-color);
-    }
-    nav a:hover {
-        background-color: black;
-    color: #d9c2a3;
-    color: var(--nav-hover-link-color);
-    background-color: var(--nav-hover-background-color);
-    }
+    }   
     .sitemap {
     display: grid;
     justify-content: center;
-    
     grid-template-columns: repeat(6, 15%);
     grid-template-rows: 3em 1.5em 1.5em 3em;
     grid-template-areas: ". . home home . ."
         ". . . top . ."
         ". left left right right ."
         "page2 page2 . . page3 page3";
+    line-height: 1.5em;
     }
     .sitemap > div {
     text-align: center;
+    line-height: 1.5em;
     }
     .sm-home {
         background-color: black;
     color: #d9c2a3;
     grid-area: home;
     background-color: #ccc;
-    line-height: 3em;
+    line-height: 1.5em;
     }
     .sm-page2 {
     grid-area: page2;
     background-color: #ccc;
-    line-height: 3em;
+    line-height: 1.5em;
     }
     .sm-page3 {
     grid-area: page3;
     background-color: #ccc;
-    line-height: 3em;
+    line-height: 1.5em;
     }
     .top {
     grid-area: top;
     border-left: 1px solid;
+    border-right: 1px solid;
     }
     .left {
     grid-area: left;
@@ -143,54 +251,86 @@ body {
         height: 725px;
     }
     body {
-        background-color: #238b8988; 
+        background-color: #238b8988;
+        line-height: 1.5em;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 22px;
+        margin: 0;
+        padding: 0;
+    }
+    h2 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    line-height: 1.5em;
     }
     header {
     background-color: rgba(62, 110, 80, 0.7);
-    }
-    nav a:hover {
-    background-color: rgba(129, 142, 109, 0.659);
+    line-height: 1.5em;
     }
     nav a:hover .home-title
     h4 {
         background-color: rgb(3, 37, 6);
         color: #d9c2a3;
-    }    
+        line-height: 1.5em;
+    }
     .book, .join {
         background-color: rgb(3,37,6);
         color: #d9c2a3;
-    }    
+        line-height: 1.5em;
+        padding: 15px 30px;
+    }
     .book:hover, .join:hover {
         background-color: rgba(179, 191, 159, 0.659);
         color:rgb(4, 87, 35);
+        line-height: 1.5em;
+    }
+    .msg {
+        background-color: rgba(62, 110, 80, 0.7);
+        line-height: 1.5em;
+        padding: 35px;
     }
     .msg h2 {
         background-color: rgb(3, 37, 6);
         color: #d9c2a3;
+        line-height: 1.5em;
+        padding: 35px;
     }
     .msg p {
         background-color: rgb(3, 37, 6);
         color: #d9c2a3;
+        line-height: 1.5em;
+        padding: 15px;
     }
     footer {
         background-color: rgba(62, 110, 80, 0.7);
+        line-height: 1.5em;
+        padding: 25px 50px;
     }
     footer a {
         background-color: rgb(3, 37, 6);
         color: #d9c2a3;
+        line-height: 1.5em;
     }
     footer a:hover {
         background-color: rgba(179, 191, 159, 0.659);
         color:rgb(4, 87, 35);
-    }
-    nav a {
-        text-align:center;
-        color:rgb(4, 48, 26);
-        text-decoration: none;
+        line-height: 1.5em;
     }
     footer p {
         font-size: 1.2em;
-    }    
+    }
     footer p a:hover {
         text-decoration: underline;
-    }     
+    }
+    footer .social img  {
+        width: 50px;
+        height: 50px;
+        line-height: 1.5em;
+        padding: 15px;
+    }
+    p.colored {
+    background-color: var(--paragraph-background-color);
+    color: var(--paragraph-color-on-color);
+    line-height: 1.5em;
+    }
