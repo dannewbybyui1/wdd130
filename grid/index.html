@@ -1,0 +1,70 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Positioning Example</title>
+    <style>
+    /* Reset margins and paddings */
+    * {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    /* Container for all boxes */
+    .content {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background-color: #f0f0f0;
+    }/* Static box (no positioning applied, it's just placed normally) */
+    .red-box {
+    top: 250px;
+    right: 50px;
+    background-color: red;
+    width: 400px;
+    height: 100px;
+    margin: 30px;
+    }/* Relative box (moves 50px down and 30px right) */
+    .green-box {
+    position: relative;
+    top: 200px;
+    left: 30px;
+    background-color: green;
+    width: 150px;
+    height: 150px;
+    float: left;
+    }/* Absolute box (moves to 100px from the top and 50px from the left) */
+    .yellow-box {
+    position: absolute;
+    top: 200px;
+    left: 30px;
+    background-color: yellow;
+    width: 150px;
+    height: 150px;
+    float: left;
+    }
+    /* Fixed box (stays fixed at the bottom-right of the viewport) */
+    .blue-box {
+    position: fixed;
+    bottom: 250px;
+    right: 50px;
+    background-color: blue;
+    width: 400px;
+    height: 100px;
+}
+</style>
+</head>
+<body>
+<div class="content">
+    <!-- Static box, no position property -->
+<div class="red-box"></div>
+    <!-- Relative box, moves 50px down and 30px right -->
+<div class="green-box"></div>
+    <!-- Absolute box, moves 100px from top and 50px from left -->
+<div class="yellow-box"></div>
+    <!-- Fixed box, stays at bottom-right -->
+<div class="blue-box"></div>
+</div>
+</body>
+</html>
