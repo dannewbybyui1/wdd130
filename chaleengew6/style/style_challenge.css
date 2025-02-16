@@ -1,0 +1,9 @@
+    html[lang="en"] {
+    -webkit-locale: "en-us";
+}
+    :root {
+    view-transition-name: root;
+}
+    html {
+    display: block;
+}
