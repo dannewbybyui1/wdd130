@@ -63,9 +63,8 @@
     }
 
     p {
-    font-family: var(--paragraph-font);
+    font-family: "Lato", Helvetica, sans-serif;
     color: var(--paragraph-color-on-white);
-    padding: 1em;
     }
     .colors {
     width: 100%;
