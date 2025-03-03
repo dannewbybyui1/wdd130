@@ -1,285 +1,249 @@
-            <!DOCTYPE html>
-            <html lang="en-us">
-            <head>
-                <meta charset="utf-8">
-                <title>Dog Sitter Site Plan</title>
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <title>Dog Sitter Site Plan</title>
 
-            <!-- Google Fonts -->
-            <link href="https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato&display=swap" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato&display=swap" rel="stylesheet">
 
-            <style>
-                /* General styling for wireframe layout */
-                body {
-                    font-family: 'Lato', Helvetica, sans-serif;
-                    background-color: #c6afde;
-                    max-width: 1200px;
-                    margin: 0 auto;
-                    padding: 4em;
-                    font-size: 18px;
-                    text-align: center;
-                }
+    <style>
+        /* General styling for wireframe layout */
+        body {
+            font-family: 'Lato', Helvetica, sans-serif;
+            background-color: #c6afde;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4em;
+            font-size: 18px;
+            text-align: center;
+        }
 
-                header, footer {
-                    background-color: #7b07e7;
-                    color: white;
-                    padding: 15px;
-                }
+        header, footer {
+            background-color: #7b07e7;
+            color: white;
+            padding: 15px;
+        }
 
-                header h1, footer p {
-                    text-align: center;
-                    color: white;            text-align: center;
-                    margin: 0;
-                }
-                nav {
-                    background-color: #9f7bc3;
-                    padding: 10px;
-                    text-align: center;
-                    margin-top: 10px;
-                }
+        header h1, footer p {
+            text-align: center;
+            margin: 0;
+        }
+        
+        nav {
+            background-color: #9f7bc3;
+            padding: 10px;
+            text-align: center;
+            margin-top: 10px;
+        }
 
-                nav a {
-                    color: white;
-                    padding: 10px 20px;
-                    text-decoration: none;
-                    margin: 0 10px;
-                }
+        nav a {
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            margin: 0 10px;
+        }
 
-                nav a:hover {
-                    background-color: #7b07e7;
-                }
+        nav a:hover {
+            background-color: #7b07e7;
+        }
 
-                section {
-                    margin: 20px 0;
-                    padding: 20px;
-                    background-color: white;
-                    box-shadow: 0 4px 8px #7b07e7(0, 0, 0, 0.1);
-                }
+        section {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
 
-                .wireframe-image {
-                    text-align: center;
-                    margin-top: 20px;
-                }
+        .wireframe-image {
+            text-align: center;
+            margin-top: 20px;
+        }
 
-                .wireframe-image img {
-                    max-width: 100%;
-                    height: auto;
-                    width: 80%;
-                    max-width: 800px;
-                    border: 1px solid #ddd;
-                    padding: 10px;
-                    background-color: white;
-                }
+        .wireframe-image img {
+            max-width: 100%;
+            height: auto;
+            width: 80%;
+            max-width: 800px;
+            border: 1px solid #ddd;
+            padding: 10px;
+            background-color: white;
+        }
 
-                h2 {
-                    color: #7b07e7;
-                    font-size: 24px;
-                }
+        h2 {
+            color: #7b07e7;
+            font-size: 24px;
+        }
 
-                .content-placeholder {
-                    background-color: #f0f0f0;
-                    height: 200px;
-                    width: 100%;
-                    margin: 15px 0;
-                }
+        .content-placeholder {
+            background-color: #f0f0f0;
+            height: 200px;
+            width: 100%;
+            margin: 15px 0;
+        }
 
-                .text-placeholder {
-                    background-color: #eee;
-                    padding: 10px;
-                    margin: 15px 0;
-                }
+        .text-placeholder {
+            background-color: #eee;
+            padding: 10px;
+            margin: 15px 0;
+        }
 
-                /* Custom Styles from the Provided Code */
-                :root {
-                    --primary-color: #7b07e7;
-                    --secondary-color: #9f7bc3;
-                    --accent1-color: #9f7bc3;
-                    --accent2-color: white;
-                    --heading-font: "IM Fell French Canon SC";
-                    --paragraph-font: Lato, Helvetica, sans-serif;
-                    --headline-color-on-white: #7b07e7;
-                    --headline-color-on-color: white;
-                    --paragraph-color-on-white: #7b07e7;
-                    --paragraph-color-on-color: white;
-                    --paragraph-background-color: #7b07e7;
-                    --nav-link-color: #7b07e7;
-                    --nav-background-color: #9f7bc3;
-                    --nav-hover-link-color: white;
-                    --nav-hover-background-color: #7b07e7;
-                }
+        /* Site Map */
+        .sitemap {
+            display: grid;
+            justify-content: center;
+            grid-template-columns: repeat(6, 15%);
+            grid-template-rows: 3em 1.5em 1.5em 3em;
+            grid-template-areas: ". . home home . ."
+                ". . . about . ."
+                ". left left services services ."
+                "contact contact . . . .";
+        }
 
-                h1, h2, h3, h4, h5, h6 {
-                    font-family: var(--heading-font);
-                    color: var(--headline-color-on-white);
-                    font-family: var(--heading-font);
-                    color: var(--headline-color-on-white);
-                }
+        .sitemap > div {
+            text-align: center;
+        }
 
-                hr {
-                    height: 3px;
-                    margin: 35px 0;
-                    background: var(--accent1-color);
-                }
+        .sm-home, .sm-about, .sm-services, .sm-contact {
+            background-color: #ccc;
+            line-height: 3em;
+        }
 
-                header {
-                    background-color: var(--primary-color);
-                    color: var(--accent2-color);
-                    padding: 1em;
-                    text-align: center;
-                    color: var(--headline-color-on-color);
-                    background-color: var(--paragraph-background-color);
-                }
+        .top {
+            grid-area: top;
+            border-left: 1px solid;
+        }
 
-                p {
-                    font-family: "Lato", Helvetica, sans-serif;
-                    color: var(--paragraph-color-on-white);
-                }
+        .left {
+            grid-area: left;
+            border-top: 1px solid;
+            border-left: 1px solid;
+        }
 
-                .sitemap {
-                    display: grid;
-                    justify-content: center;
-                    grid-template-columns: repeat(6, 15%);
-                    grid-template-rows: 3em 1.5em 1.5em 3em;
-                    grid-template-areas: ". . home home . ."
-                        ". . . top . ."
-                        ". left left right right ."
-                        "page2 page2 . . page3 page3";
-                }
+        .right {
+            grid-area: right;
+            border-top: 1px solid;
+            border-right: 1px solid;
+        }
 
-                .sitemap > div {
-                    text-align: center;
-                }
+        nav {
+            background-color: #9f7bc3;
+            line-height: 3em;
+            text-align: center;
+            font-size: 1.2em;
+        }
 
-                .sm-home, .sm-page2, .sm-page3 {
-                    background-color: #ccc;
-                    line-height: 3em;
-                }
+        nav a {
+            padding: 1em;
+            min-width: 120px;
+            text-decoration: none;
+        }
 
-                .top {
-                    grid-area: top;
-                    border-left: 1px solid;
-                }
+        nav a:link, nav a:visited {
+            color: white;
+        }
 
-                .left {
-                    grid-area: left;
-                    border-top: 1px solid;
-                    border-left: 1px solid;
-                }
+        nav a:hover {
+            color: var(--nav-hover-link-color);
+            background-color: var(--nav-hover-background-color);
+        }
 
-                .right {
-                    grid-area: right;
-                    border-top: 1px solid;
-                    border-right: 1px solid;
-                }
-
-                nav {
-                    background-color: var(--nav-background-color);
-                    line-height: 3em;
-                    text-align: center;
-                    font-size: 1.2em;
-                }
-
-                nav a {
-                    padding: 1em;
-                    min-width: 120px;
-                    text-decoration: none;
-                    padding: 10px;
-                }
-
-                nav a:link, nav a:visited {
-                    color: var(--nav-link-color);
-                }
-
-                nav a:hover {
-                    color: var(--nav-hover-link-color);
-                    background-color: var(--nav-hover-background-color);
-                }
     </style>
 </head>
 <body>
 
-    <header>
-        <h1 class="wireframe-headline">Dog Sitter Site Plan</h1>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Contact</a>
-        </nav>
-    </header>
+<header>
+    <h1 class="wireframe-headline">Dog Sitter Site Plan</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
 
-    <div class="container">
-        <!-- Overview Section -->
-        <section>
-            <h2>Overview</h2>
-            <h3>Purpose</h3>
-            <p>The purpose of the website is to connect pet owners with reliable and trustworthy dog sitters. It provides an easy platform to find, book, and communicate with sitters who will care for pets while owners are away.</p>
+<div class="container">
+    <!-- Overview Section -->
+    <section>
+        <h2>Overview</h2>
+        <h3>Purpose</h3>
+        <p>The purpose of the website is to connect pet owners with reliable and trustworthy dog sitters. It provides an easy platform to find, book, and communicate with sitters who will care for pets while owners are away.</p>
 
-            <h3>Audience</h3>
-            <p>Pet owners looking for reliable dog-sitting services.</p>
-        </section>
+        <h3>Audience</h3>
+        <p>Our primary audience consists of pet owners looking for reliable and caring dog-sitting services for their furry friends when they are away. Our secondary audience includes professional dog sitters looking to offer their services to a broader audience.</p>
+    </section>
 
-        <!-- Branding Section -->
-        <section>
-            <h2>Branding</h2>
-            <h3>Website Logo</h3>
-            <img src="images/woof.png" alt="Logo image" width="300" height="300">
-        </section>
+    <!-- Branding Section -->
+    <section>
+        <h2>Branding</h2>
+        <h3>Website Logo</h3>
+        <img src="images/woof.png" alt="Logo image" width="100%px" height="100%px">
+    </section>
 
-        <!-- Style Guide Section -->
-        <section>
-            <h2>Style Guide</h2>
+    <!-- Style Guide Section -->
+    <section>
+        <h2>Style Guide</h2>
 
-            <!-- Color Palette -->
-            <h3>Color Palette</h3>
-            <table class="colors">
-                <tr><th>Primary</th><th>Secondary</th><th>Accent 1</th><th>Accent 2</th></tr>
-                <tr><td class="primary"></td><td class="secondary"></td><td class="accent1"></td><td class="accent2"></td></tr>
-            </table>
+        <!-- Color Palette -->
+        <h3>Color Palette</h3>
+        <table class="colors">
+            <tr><th>Primary</th><th>Secondary</th><th>Accent 1</th><th>Accent 2</th></tr>
+            <tr><td class="primary"></td><td class="secondary"></td><td class="accent1"></td><td class="accent2"></td></tr>
+        </table>
 
-            <!-- Typography -->
-            <h3>Typography</h3>
-            <h4>Heading Font: <p style="font-family: 'IM Fell French Canon SC';">This is a text with a custom font.</p></h4>
-            <h4>Paragraph Font: Lato, Helvetica, sans-serif</h4>
-            <p>Normal Paragraph Example:</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-            <p class="colored">Colored Paragraph Example:</p>
-            <p class="colored">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+        <!-- Typography -->
+        <h3>Typography</h3>
+        <h4>Heading Font: <p style="font-family: 'IM Fell French Canon SC';">This is a text with a custom font.</p></h4>
+        <h4>Paragraph Font: Lato, Helvetica, sans-serif</h4>
+        <p>Normal Paragraph Example:</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+    </section>
 
-            <!-- Navigation -->
-            <h3>Navigation</h3>
-            <nav>
-                <a href="#">Home</a>
-                <a href="#">Page2</a>
-                <a href="#">Page3</a>
-            </nav>
-        </section>
+    <!-- Site Map Section -->
+    <section>
+        <h2>Site Map</h2>
+        <div class="sitemap">
+            <div class="sm-home">Home</div>
+            <div class="sm-about">About</div>
+            <div class="sm-services">Services</div>
+            <div class="sm-contact">Contact</div>
+            <div class="top">&nbsp;</div>
+            <div class="left">&nbsp;</div>
+            <div class="right">&nbsp;</div>
+        </div>
+    </section>
 
-        <!-- Site Map Section -->
-        <section>
-            <h2>Site Map</h2>
-            <div class="sitemap">
-                <div class="sm-home">Home</div>
-                <div class="sm-page2">[Page2]</div>
-                <div class="sm-page3">[Page3]</div>
-                <div class="top">&nbsp;</div>
-                <div class="left">&nbsp;</div>
-                <div class="right">&nbsp;</div>
-            </div>
-        </section>
+    <!-- Content Section -->
+    <section>
+        <h2>Content</h2>
 
-        <!-- Content Section -->
-        <section>
-            <h2>Content</h2>
-            <h3>Home Page</h3>
-            <p>Welcome to our Dog Sitter website! We connect pet owners with reliable and trustworthy dog sitters. Whether you need someone to look after your furry friend </p>           
-            <img src="images/home doggie.jpg" alt="image for homepage" width="500" height="300">
-        </section>
+        <!-- Home Page -->
+        <h3>Home Page</h3>
+        <p>Welcome to our Dog Sitter website! We connect pet owners with reliable and trustworthy dog sitters. Whether you need someone to look after your furry friend for a day or a week, we make it easy for you to find a sitter that fits your needs. Our platform is user-friendly and ensures peace of mind by allowing you to book and communicate with experienced pet sitters in your area.</p>
+        <img src="images/home doggie.jpg" alt="Dog and sitter" width="500" height="500">
+        <img src="images/happy puppy.webp" alt="Happy dog with sitter" width="500" height="500">
 
-        <footer>
-            <div class="wireframe-footer">
-                <h2>Footer</h2>
+        <!-- About Page -->
+        <h3>About Page</h3>
+        <p>Our mission is to provide pet owners with reliable and trustworthy dog-sitting services. Our team of passionate dog lovers is dedicated to ensuring that your pet feels safe, comfortable, and loved while you are away. Each of our sitters has been vetted and trained to provide the highest level of care.</p>
+        <img src="images/pet sitter.jpg" alt="Dog sitter" width="300" height="300">
+        <img src="images/pet service.webp" alt="Our team" width="300" height="300">
+
+        <!-- Services Page -->
+        <h3>Services Page</h3>
+        <p>We offer a variety of dog-sitting services to suit your needs. Whether you need a daily walk, overnight care, or long-term sitting, we have you covered. All services include daily updates, personalized care, and plenty of playtime for your dog.</p>
+        <img src="images/dog sitter walker.jpg" alt="Dog walker" width="300" height="300">
+        <img src="images/overnight care.jpeg" alt="Overnight dog care" width="300" height="300">
+
+    </section>
+
+    <footer>
+        <div class="wireframe-footer">
+            <h2>Footer</h2>
             <p>&copy; 2025 Dog Sitter | All Rights Reserved</p>
-        </footer>
-    </div>
+        </div>
+    </footer>
+</div>
+
 </body>
 </html>
