@@ -123,7 +123,10 @@
     color: var(--nav-hover-link-color);
     background-color: var(--nav-hover-background-color);
     }
-
+    nav a:active {
+    color: var(--nav-link-color);
+    background-color: var(--nav-background-color);
+    }
     .sitemap {
     display: grid;
     justify-content: center;
