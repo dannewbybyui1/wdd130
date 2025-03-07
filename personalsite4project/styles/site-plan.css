@@ -30,148 +30,267 @@
     /*  Look around below...but DON'T CHANGE ANYTHING! */
 
     body {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 4em;
-    font-size: 18px;
-    text-align: center;
-    }
-    img {
-    display: block;
-    margin: 0 auto;
-    }
-    h1, h2, h3, h4, h5, h6 {
-    font-family: var(--heading-font);
-    color: var(--headline-color-on-white);
-    }
-    h2 {
-    text-align: center;
-    }
-    hr {
-    height: 3px;
-    margin: 35px 0;
-    background: var(--accent1-color);
-    }
-    header {
-    padding: 1em;
-    text-align: center;
-    color: var(--headline-color-on-color);
-    background-color: var(--paragraph-background-color);
-    }
-    header > h1, header > h2 {
-    color: var(--headline-color-on-color);
+        font-family: 'Lato', Helvetica, sans-serif;
+        background-color: #c6afde;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 4em;
+        font-size: 18px;
+        text-align: center;
     }
 
-    p {
-    font-family: "Lato", Helvetica, sans-serif;
-    color: var(--paragraph-color-on-white);
-    }
-    .colors {
-    width: 100%;
-    min-width: 350px;
-    margin: 30px auto;
-    text-align: center;
-    }
-    .colors th {
-    background-color: #999;
-    }
-    .colors td{
-    width: 25%;
-    height: 3em;
+    header, footer {
+        background-color: #7b07e7;
+        color: white;
+        padding: 15px;
     }
 
-    .primary {
-    background-color: var(--primary-color);
+    header h1, footer p {
+        text-align: center;
+        margin: 0;
     }
-    .secondary {
-    background-color: var(--secondary-color);
-    }
-    .accent1 {
-    background-color: var(--accent1-color);
-    }
-    .accent2{
-    background-color: var(--accent2-color);
-    }
-
-    p.colored {
-    background-color: var(--paragraph-background-color);
-    color: var(--paragraph-color-on-color);
-    }
-
+    
     nav {
-    background-color: var(--nav-background-color);
-    line-height: 3em;
-    text-align: center;
-    font-size: 1.2em;
+        background-color: #9f7bc3;
+        padding: 10px;
+        text-align: center;
+        margin-top: 10px;
     }
-    nav  {
-    list-style-type: none;
-    display: flex;
 
-    }
     nav a {
-    padding:1em;
-    min-width: 120px;
-    text-decoration: none;
-    padding: 10px;
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+        margin: 0 10px;
+    }
 
-    }
-    nav a:link, nav a:visited {
-    color: var(--nav-link-color);
-    }
     nav a:hover {
-    color: var(--nav-hover-link-color);
-    background-color: var(--nav-hover-background-color);
+        background-color: #7b07e7;
     }
-    nav a:active {
-    color: var(--nav-link-color);
-    background-color: var(--nav-background-color);
+
+    section {
+        margin: 20px 0;
+        padding: 20px;
+        background-color: white;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
+
+    .wireframe-image {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .wireframe-image img {
+        max-width: 100%;
+        height: auto;
+        width: 80%;
+        max-width: 800px;
+        border: 1px solid #ddd;
+        padding: 10px;
+        background-color: white;
+    }
+
+    h2 {
+        color: #7b07e7;
+        font-size: 24px;
+    }
+
+    .content-placeholder {
+        background-color: #f0f0f0;
+        height: 200px;
+        width: 100%;
+        margin: 15px 0;
+    }
+
+    .text-placeholder {
+        background-color: #eee;
+        padding: 10px;
+        margin: 15px 0;
+    }
+
+    /* Site Map */
     .sitemap {
-    display: grid;
-    justify-content: center;
-
-    grid-template-columns: repeat(6, 15%);
-    grid-template-rows: 3em 1.5em 1.5em 3em;
-    grid-template-areas: ". . home home . ."
-        ". . . top . ."
-        ". left left right right ."
-        "page2 page2 . . page3 page3";
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(6, 15%);
+        grid-template-rows: 3em 1.5em 1.5em 3em;
+        grid-template-areas: ". . home home . ."
+            ". . . about . ."
+            ". left left services services ."
+            "contact contact . . . .";
     }
+
     .sitemap > div {
+        text-align: center;
+    }
 
-    text-align: center;
-
-    }
-    .sm-home {
-    grid-area: home;
-    background-color: #ccc;
-    line-height: 3em;
-    }
-    .sm-page2 {
-    grid-area: page2;
-    background-color: #ccc;
-    line-height: 3em;
-    }
-    .sm-page3 {
-    grid-area: page3;
-    background-color: #ccc;
-    line-height: 3em;
+    .sm-home, .sm-about, .sm-services, .sm-contact {
+        background-color: #ccc;
+        line-height: 3em;
     }
 
     .top {
-    grid-area: top;
-    border-left: 1px solid;
+        grid-area: top;
+        border-left: 1px solid;
     }
 
     .left {
-    grid-area: left;
-    border-top: 1px solid;
-    border-left: 1px solid;
+        grid-area: left;
+        border-top: 1px solid;
+        border-left: 1px solid;
     }
 
     .right {
-    grid-area: right;
-    border-top: 1px solid;
-    border-right: 1px solid;
+        grid-area: right;
+        border-top: 1px solid;
+        border-right: 1px solid;
     }
+
+    nav {
+        background-color: #9f7bc3;
+        line-height: 3em;
+        text-align: center;
+        font-size: 1.2em;
+    }
+    nav a {
+        padding: 1em;
+        min-width: 120px;
+        text-decoration: none;
+    }
+    nav a:link, nav a:visited {
+        color: white;
+    }
+    nav a:hover {
+        color: var(--nav-hover-link-color);
+        background-color: var(--nav-hover-background-color);
+    }
+    #logo {
+        padding-top: 5px;
+        justify-self: center;
+        align-self: center;
+    }
+    .logo {
+        border-radius: 50%;
+    }
+    #home-title {
+        font-size: 2em;
+        color: #7b07e7;
+    }
+    #hero {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+        margin-top: 20px;
+    }
+    #hero-box {
+        grid-column: 1 / 3;
+        grid-row: 1 / 4;
+        background-color: hsl(299, 50%, 74%);
+        opacity: 0.8;
+        z-index: 1;
+    }
+    #hero-msg {
+        grid-column: 1 / 3;
+        grid-row: 1 / 4;
+        margin-top: 100px;
+        text-align: center;
+        color: white;
+        z-index: 1;
+    }
+    #hero-msg h1 {
+        font-size: 2em;
+    }
+    #hero-img {
+        grid-column: 1 / 2;
+        grid-row: 1 / 4;
+        z-index: 0;
+    }
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+    }
+    .container > div {
+        padding: 20px;
+    }
+    .container img {
+        width: 100%;
+        height: auto;
+    }
+    footer {
+        background-color: #7b07e7;
+        color: white;
+        padding: 15px;
+        text-align: center;
+    }
+    footer p {
+        margin: 0;
+    }
+    .wireframe-footer {
+        background-color: #7b07e7;
+        color: white;
+        padding: 15px;
+        text-align: center;
+    }
+    .sitemap {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: 3em 1.5em 1.5em 3em;
+        grid-template-areas: ". . home home . ."
+            ". . . about . ."
+            ". left left services services ."
+            "contact contact . . . .";
+    }
+    .home {
+        grid-area: home;
+    }
+    .about {
+        grid-area: about;
+    }
+    .services {
+        grid-area: services;
+    }
+    .contact {
+        grid-area: contact;
+    }
+    .top {
+        grid-area: top;
+        border-left: 1px solid;
+    }
+    .left {
+        grid-area: left;
+        border-top: 1px solid;
+        border-left: 1px solid;
+    }
+    .right {
+        grid-area: right;
+        border-top: 1px solid;
+        border-right: 1px solid;
+    }
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+    }
+    .container > div {
+        padding: 20px;
+    }
+    .container img {
+        width: 100%;
+        height: auto;
+    }
+    footer {
+        background-color: #7b07e7;
+        color: white;
+        padding: 15px;
+        text-align: center;
+    }
+    footer p {
+        margin: 0;
+    }
+    @media (max-width: 600px) {
+        .container {
+            grid-template-columns: 1fr;
+        }
+    }
+    
