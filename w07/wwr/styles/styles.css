@@ -8,6 +8,19 @@
         background-color: #238b8988;
         font-family: Georgia, 'Times New Roman', Times, serif;
         }
+        #feedback {
+        background-color: antiquewhite;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding: .5em;
+            /* make this element invisible until we are ready for it */
+        display: none;      
+        }
+        .moveDown {
+            margin-top: 3em;
+        }
         form {
         display: inline-block;
         padding: 1em;
@@ -79,7 +92,7 @@
         #hero {
             display: grid;
             grid-template-columns: 1fr 3fr 1fr;
-            margin-top: -20px;
+            margin-top: -10px;
         }
 
         #hero-box {
