@@ -200,6 +200,39 @@
     border-radius: 10px;
     box-shadow: 5px 5px 15px #9b30de;
     }
+    .sidebar {
+    height: 100%;
+    width: 120px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: hsl(274, 33%, 46%); /* Slightly darker shade for a professional look */
+    overflow-x: hidden;
+    padding-top: 20px;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2); /
+    }
+    
+      /* Style sidebar links */
+    .sidebar a {
+    display: block;
+    padding: 12px 20px;
+    font-size: 18px;
+    color: #e0c4ff; /* Lightened text color for better contrast */
+    text-decoration: none;
+    border-radius: 5px;
+    }
+    
+      /* Style links on mouse-over */
+    .sidebar a:hover {
+        background-color: #7624a2;
+    padding-left: 25px; /* Adds a smooth movement effect */
+    color: #ffffff;
+    }
+    .main {
+    margin-left: 220px; /* Adjusted to match new sidebar width */
+    padding: 20px;
+    }
     .home-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -271,7 +304,8 @@
         gap: 10px;
         margin-top: 10px;
     }
-    }
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
     .sitters-section {
         flex-direction: column;
     }
@@ -308,7 +342,8 @@
         footer {
             flex-direction: column;
         }
-        footer .social {
-            margin-top: 20px;
+            footer .social {
+                margin-top: 20px;
+            }
         }
         
