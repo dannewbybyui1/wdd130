@@ -227,7 +227,7 @@
     .sidebar a:hover {
         background-color: #7624a2;
     padding-left: 25px; /* Adds a smooth movement effect */
-    color: #ffffff;
+    color: #ab78c7;
     }
     .main {
     margin-left: 220px; /* Adjusted to match new sidebar width */
