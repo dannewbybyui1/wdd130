@@ -16,7 +16,6 @@
     left: 0;
     right: 0;
     padding: .5em;
-        /* make this element invisible until we are ready for it */
     display: none;    
     }
     .moveDown {
@@ -38,7 +37,7 @@
     }
     input,
     textarea {
-    font: 1em sans-serif;
+    font-size: 1em sans-serif;
     width: 300px;
     box-sizing: border-box;
     border: 1px solid #9b30de;
